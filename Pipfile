@@ -5,9 +5,9 @@ name = "pypi"
 
 [packages]
 aiogram = "~=2.14"
-environs = "~=8.0.0"
+environs = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "*"
