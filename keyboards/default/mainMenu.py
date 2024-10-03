@@ -5,7 +5,7 @@ mainMenu = ReplyKeyboardMarkup(
     keyboard=[
         [
             KeyboardButton(text='🛎️ Subscribe'),
-            KeyboardButton(text='📚 Courses'),
+            KeyboardButton(text='📚 Categories'),
         ],
         [
             KeyboardButton(text='🛤️ Learning Path'),

@@ -1,4 +1,4 @@
-from . import courses
+from . import categoriesHandler
 from . import subscribeHandler
 from . import help
 from . import start
