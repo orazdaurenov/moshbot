@@ -1,5 +1,4 @@
 from aiogram.types import Message, CallbackQuery
-from aiogram.types import ReplyKeyboardRemove
 from keyboards.inline.courseButton import coursesCategory, frontEnd
 from loader import dp
 

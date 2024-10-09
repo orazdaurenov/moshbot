@@ -1,5 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from keyboards.inline.callbacks import frontend, backend, fullstack
+from keyboards.inline.frontendList import frontEndCourses
 
 coursesCategory = InlineKeyboardMarkup(
     inline_keyboard=[
@@ -25,14 +26,8 @@ coursesCategory = InlineKeyboardMarkup(
 # 2nd method of creating inline button
 
 frontEnd = InlineKeyboardMarkup(row_width=1)
-
-htmlcssjs = InlineKeyboardButton(
-    text='HTML-CSS-JS', callback_data=frontend.new(item_name='frontend'))
-frontEnd.insert(htmlcssjs)
-
-react = InlineKeyboardButton(
-    text='React', callback_data=frontend.new(item_name='frontend'))
-frontEnd.insert(react)
-
+for key, value in frontEndCourses.items():
+    frontEnd.insert(InlineKeyboardButton(
+        text=key, callback_data=frontend.new(item_name=value)))
 back_button = InlineKeyboardButton(text='Back', callback_data='cancel')
 frontEnd.insert(back_button)
